@@ -28,7 +28,8 @@ There are several ways to generate standard image files (.png, .jpg):
  1. Use *isis2std*
  2. Use the [GDAL's tool](http://planetarygis.blogspot.com/2014/06/using-isis-23-image-cubes-in-gis.html)
  
-As they were not working properly (ending up generating a blank .png image), an alternative process is used for the conversion:
+But as they were not working properly (ending up generating a blank .png image), an alternative process is used for the conversion:
  1. Use *lronac2pds* to convert back the .CUB file into a .IMG
  2. Use the tool [IMG2PNG](http://bjj.mmedia.is/utils/img2png/#howto) to convert the .IMG file into a .PNG
  
+The script *isis.py* creates a text file with all the commands from the pipeline needed to calibrate every single .IMG present in a designated folder and the *isis.sh* is a bash script that run the commands from the text file.
